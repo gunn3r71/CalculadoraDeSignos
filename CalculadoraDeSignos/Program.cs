@@ -12,7 +12,7 @@ namespace CalculadoraDeSignos //utilizado para organizar seus códigos
             signo.MesInicio = 07;
             signo.DiaFim = 22;
             signo.MesFim = 08;
-            signo.Descricao = "Carismáticas e terem personalidades fortes";
+            signo.Descricao = $"Pessoas com o signo de {signo.Nome} são carismáticas e tem personalidade fortes";
 
 
             Console.WriteLine(signo.ToString());
