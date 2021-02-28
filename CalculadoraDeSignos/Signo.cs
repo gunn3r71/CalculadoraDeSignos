@@ -55,7 +55,7 @@ namespace CalculadoraDeSignos
         {
             return $"Olá, sou o signo de {Nome}," +
                 $"\nSou o signo de todas as pessoas que nascem de {DiaInicio}/{MesInicio} à {DiaFim}/{MesFim}." +
-                $"\nPessoas que me tem como signo são conhecidas por serem {Descricao}";
+                $"\nMinha descrição:\n{Descricao}";
         }
     }
 }
