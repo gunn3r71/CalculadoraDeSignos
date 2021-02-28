@@ -22,39 +22,39 @@ namespace CalculadoraDeSignos
         public int DiaInicio 
         {
             get { return _dia_inicio; }
-            set { _dia_inicio = (value >= 1 && value <= 31) ? value : 0; }
+            set { _dia_inicio = value; }
         }   
 
         public int MesInicio
         {
             get { return _mes_inicio; }
-            set { _mes_inicio = (value >= 1 && value <= 12) ? value : 0; }
+            set { _mes_inicio = value; }
         }
 
         public int DiaFim
         {
             get { return _dia_fim; }
-            set { _dia_fim = (value >= 1 && value <= 31) ? value : 0; }
+            set { _dia_fim = value; }
         }
 
         public int MesFim
         {
             get { return _mes_fim; }
-            set { _mes_fim = (value >= 1 && value <= 12) ? value : 0; }
+            set { _mes_fim = value; }
         }
 
         public string Descricao
         {
             get { return _descricao; }
-            set { _descricao = (value != null && value != "") ? value : "Invalid"; }
+            set { _descricao = value; }
         }
 
 
 
         public override string ToString()
         {
-            return $"Olá, sou o signo de {Nome}," +
-                $"\nSou o signo de todas as pessoas que nascem de {DiaInicio}/{MesInicio} à {DiaFim}/{MesFim}." +
+            return $"Seu signo é {Nome}," +
+                $"\nO signo de todas as pessoas que nascem de {DiaInicio}/{MesInicio} à {DiaFim}/{MesFim}." +
                 $"\nMinha descrição:\n{Descricao}";
         }
     }
